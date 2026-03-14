@@ -128,7 +128,7 @@ in
   xdg.configFile = {
     "ghostty/themes/Berni".source = ./app-themes/ghostty-theme;
     "ghostty/config".text = ''
-      theme = Abernathy
+      theme = Berni
     '';
   };
 }
