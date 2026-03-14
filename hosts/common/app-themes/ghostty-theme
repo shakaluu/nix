@@ -1,0 +1,38 @@
+# berni — Ghostty color scheme
+# iTerm2 Breeze palette (mbadolato/iTerm2-Color-Schemes) with #121212 background.
+# ANSI slot roles for the berni zsh-theme prompt:
+#   black   → status segment background
+#   red     → git modified/deleted bg, battery critical
+#   green   → context bg (local), battery good
+#   yellow  → git dirty bg (black fg)
+#   blue    → git clean bg, time segment bg
+#   magenta → SSH context bg
+#   cyan    → directory segment bg, git stashed bg
+#   white   → text on all coloured segments
+
+background           = #121212
+foreground           = #eff0f1
+cursor-color         = #eff0f1
+cursor-text          = #121212
+selection-background = #31363b
+selection-foreground = #eff0f1
+
+# Normal (0-7) — Breeze
+palette = 0=#31363b
+palette = 1=#ed1515
+palette = 2=#ffffff
+palette = 3=#ffffff
+palette = 4=#1d99f3
+palette = 5=#9b59b6
+palette = 6=#1abc9c
+palette = 7=#eff0f1
+
+# Bright (8-15) — Breeze
+palette = 8=#7f8c8d
+palette = 9=#c0392b
+palette = 10=#1cdc9a
+palette = 11=#fdbc4b
+palette = 12=#3daee9
+palette = 13=#8e44ad
+palette = 14=#16a085
+palette = 15=#fcfcfc
