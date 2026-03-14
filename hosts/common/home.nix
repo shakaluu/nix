@@ -41,6 +41,11 @@ in
       kind
       skaffold
       kubectl
+      kubectx
+      azure-cli
+      awscli
+      kubelogin
+      k9s
       yq-go
       jq
     ];
@@ -83,7 +88,7 @@ in
       enable = true;
       shellAliases = {
         nix-update = nixUpdateCmd;
-      };
+      } // import ./zsh-aliases.nix;
       initContent = ''
         KUBE_PS1_PREFIX=""
         KUBE_PS1_SUFFIX=""
