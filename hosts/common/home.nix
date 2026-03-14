@@ -95,7 +95,19 @@ in
         KUBE_PS1_SEPARATOR=""
         KUBE_PS1_SYMBOL_COLOR=null
         KUBE_PS1_CTX_COLOR=null
-        KUBE_PS1_SYMBOL_PADDING=true        
+        KUBE_PS1_SYMBOL_PADDING=true
+
+        awsadd() {
+          aws eks update-kubeconfig --name "$1" --region "$2" --alias "$1"
+        }
+
+        azadd() {
+          az aks get-credentials --name "$1" --resource-group "$2"
+        }
+
+        gcpadd() {
+          gcloud container clusters get-credentials "$1" --region "$2" --project "$3"
+        }
       '';
       oh-my-zsh = {
         enable = true;
