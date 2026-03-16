@@ -28,6 +28,7 @@
       "helm"
       "docker"
       "docker-credential-helper"
+      "brew install anomalyco/tap/opencode"
     ];
     casks = [
       "capacities"
