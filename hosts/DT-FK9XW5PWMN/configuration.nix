@@ -20,7 +20,7 @@
   homebrew = {
     enable = true;
     onActivation.cleanup = "zap";
-    taps = [];
+    taps = [ "anomalyco/tap" ];
     brews = [
       "vim"
       "neofetch"
@@ -28,7 +28,7 @@
       "helm"
       "docker"
       "docker-credential-helper"
-      "brew install anomalyco/tap/opencode"
+      "anomalyco/tap/opencode"
     ];
     casks = [
       "capacities"
