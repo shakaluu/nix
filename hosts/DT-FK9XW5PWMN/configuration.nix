@@ -31,6 +31,7 @@
       "anomalyco/tap/opencode"
     ];
     casks = [
+      "bitwarden"
       "capacities"
       "rancher"
       "visual-studio-code"
